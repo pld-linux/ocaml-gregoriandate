@@ -1,6 +1,6 @@
 %define		_vendor_name	gregoriandate
 Summary:	Gregoriandate for Ocaml
-Summary(pl):	Data w kalendarzu gregorianskim dla Ocamla
+Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
 Release:	1
@@ -32,12 +32,12 @@ gregoriañskiego, u¿ywanego na pó³kuli zachodniej, a i coraz czê¶ciej
 na wschodniej. Mimo ¿e kalendarz gregoriañski zosta³ przyjêty w 1582
 roku, biblioteka ta potrafi wykonywaæ obliczenia od 1 roku naszej ery.
 
-Powsta³a ona w wykiku inspiracji modu³em Perla Date::Calc i na nim siê
+Powsta³a ona w wyniku inspiracji modu³em Perla Date::Calc i na nim siê
 opiera.
 
 %package devel
 Summary:	Gregoriandate for Ocaml - development part
-Summary(pl):	Data w kalendarzu gregorianskim dla Ocamla - czê¶æ programistyczna
+Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla - czê¶æ programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
@@ -68,7 +68,8 @@ biblioteki.
 %setup -q -n %{_vendor_name}-%{version}
 
 %build
-%{__make} CC="%{__cc} %{rpmcflags} -fPIC" all
+%{__make} all \
+	CC="%{__cc} %{rpmcflags} -fPIC"
 
 %install
 rm -rf $RPM_BUILD_ROOT
