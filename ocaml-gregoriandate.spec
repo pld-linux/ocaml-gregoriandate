@@ -1,12 +1,12 @@
-%define         _short_name gregoriandate
+%define         _vendor_name gregoriandate
 Summary:	Gregoriandate for Ocaml
 Summary(pl):	Data w kalendazu gregorianskim dla Ocamla
-Name:		ocaml-%{_short_name}
+Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://merjis.com/_file/%{_short_name}-%{version}.tar.gz
+Source0:	http://merjis.com/_file/%{_vendor_name}-%{version}.tar.gz
 #Source0-md5:   fab990962055f38720d4e626b796db8d
 BuildRequires:	ocaml >= 3.04-7
 %requires_eq	ocaml-runtime
@@ -54,7 +54,7 @@ ery. Pakiet ten zawiera pliki niezbêdne do tworzenia programów
 u¿ywaj±cych tej biblioteki.
 
 %prep
-%setup -q -n %{_short_name}-%{version}
+%setup -q -n %{_vendor_name}-%{version}
 
 %build
 %{__make} CC="%{__cc} %{rpmcflags} -fPIC" all
