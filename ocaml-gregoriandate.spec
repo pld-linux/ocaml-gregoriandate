@@ -1,13 +1,13 @@
-%define         _vendor_name gregoriandate
+%define		_vendor_name	gregoriandate
 Summary:	Gregoriandate for Ocaml
-Summary(pl):	Data w kalendazu gregorianskim dla Ocamla
+Summary(pl):	Data w kalendarzu gregorianskim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://merjis.com/_file/%{_vendor_name}-%{version}.tar.gz
-#Source0-md5:   fab990962055f38720d4e626b796db8d
+# Source0-md5:	fab990962055f38720d4e626b796db8d
 BuildRequires:	ocaml >= 3.04-7
 %requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,10 +23,21 @@ library extends it back through to 1 AD.
 
 It is inspired and derived from Perl's Date::Calc
 
+%description -l pl
+Gregorian Date jest napisan± w ocamlu bibliotek± dla ocamla wykonuj±c±
+podstawowe obliczenia w kalendarzu gregoriañskim.
+
+Jest to biblioteka czêsto u¿ywanych obliczeñ przy u¿yciu kalendarza
+gregoriañskiego, u¿ywanego na pó³kuli zachodniej, a i coraz czê¶ciej
+na wschodniej. Mimo ¿e kalendarz gregoriañski zosta³ przyjêty w 1582
+roku, biblioteka ta potrafi wykonywaæ obliczenia od 1 roku naszej ery.
+
+Powsta³a ona w wykiku inspiracji modu³em Perla Date::Calc i na nim siê
+opiera.
 
 %package devel
 Summary:	Gregoriandate for Ocaml - development part
-Summary(pl):	Data w kalendazu gregorianskim dla Ocamla - cze¶æ programistyczna
+Summary(pl):	Data w kalendarzu gregorianskim dla Ocamla - czê¶æ programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
@@ -43,15 +54,15 @@ It is inspired and derived from Perl's Date::Calc This package
 contains files needed to develop OCaml programs using this library.
 
 %description devel -l pl
-Gregorian Date jest napisana w ocamlu biblioteka dla ocamla wykonujaca
-podstawowe obliczenia w kalendarzu Gregorianskim.
+Gregorian Date jest napisan± w ocamlu bibliotek± dla ocamla wykonuj±c±
+podstawowe obliczenia w kalendarzu gregoriañskim.
 
-To biblioteka czesto uzywanych obliczen przy uzyciu kalendarza
-Gregorianskiego, uzywanego na Zahodniej polkuli, a i coraz czesciej na
-wschodniej. Mimo ze kaledaz Gregorianski zostal przyjety do uzycia w
-1582 roku, ta biblioteka potrafi wykonywac obliczenia do 1 roku naszej
-ery. Pakiet ten zawiera pliki niezbêdne do tworzenia programów
-u¿ywaj±cych tej biblioteki.
+Jest to biblioteka czêsto u¿ywanych obliczeñ przy u¿yciu kalendarza
+gregoriañskiego, u¿ywanego na pó³kuli zachodniej, a i coraz czê¶ciej
+na wschodniej. Mimo ¿e kalendarz gregoriañski zosta³ przyjêty w 1582
+roku, biblioteka ta potrafi wykonywaæ obliczenia od 1 roku naszej ery.
+Pakiet zawiera pliki niezbêdne do tworzenia programów u¿ywaj±cych tej
+biblioteki.
 
 %prep
 %setup -q -n %{_vendor_name}-%{version}
@@ -63,7 +74,7 @@ u¿ywaj±cych tej biblioteki.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_libdir}/ocaml/gregoriandate
-install *.cm[ixa]* *.a  $RPM_BUILD_ROOT%{_libdir}/ocaml/gregoriandate
+install *.cm[ixa]* *.a $RPM_BUILD_ROOT%{_libdir}/ocaml/gregoriandate
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
