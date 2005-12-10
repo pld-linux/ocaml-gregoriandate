@@ -3,7 +3,7 @@ Summary:	Gregoriandate for Ocaml
 Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://merjis.com/_file/%{_vendor_name}-%{version}.tar.gz
