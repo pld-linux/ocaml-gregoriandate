@@ -1,10 +1,10 @@
 %define		_vendor_name	gregoriandate
-%define		ocaml_ver	1:3.09.1
+%define		ocaml_ver	1:3.09.2
 Summary:	Gregoriandate for Ocaml
 Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Libraries
 Source0:	http://merjis.com/_file/%{_vendor_name}-%{version}.tar.gz
