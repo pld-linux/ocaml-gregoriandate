@@ -1,7 +1,7 @@
 %define		_vendor_name	gregoriandate
 %define		ocaml_ver	1:3.09.2
 Summary:	Gregoriandate for Ocaml
-Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla
+Summary(pl.UTF-8):   Data w kalendarzu gregoriaÅ„skim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
 Release:	5
@@ -24,21 +24,21 @@ library extends it back through to 1 AD.
 
 It is inspired and derived from Perl's Date::Calc
 
-%description -l pl
-Gregorian Date jest napisan± w ocamlu bibliotek± dla ocamla wykonuj±c±
-podstawowe obliczenia w kalendarzu gregoriañskim.
+%description -l pl.UTF-8
+Gregorian Date jest napisanÄ… w ocamlu bibliotekÄ… dla ocamla wykonujÄ…cÄ…
+podstawowe obliczenia w kalendarzu gregoriaÅ„skim.
 
-Jest to biblioteka czêsto u¿ywanych obliczeñ przy u¿yciu kalendarza
-gregoriañskiego, u¿ywanego na pó³kuli zachodniej, a i coraz czê¶ciej
-na wschodniej. Mimo ¿e kalendarz gregoriañski zosta³ przyjêty w 1582
-roku, biblioteka ta potrafi wykonywaæ obliczenia od 1 roku naszej ery.
+Jest to biblioteka czÄ™sto uÅ¼ywanych obliczeÅ„ przy uÅ¼yciu kalendarza
+gregoriaÅ„skiego, uÅ¼ywanego na pÃ³Å‚kuli zachodniej, a i coraz czÄ™Å›ciej
+na wschodniej. Mimo Å¼e kalendarz gregoriaÅ„ski zostaÅ‚ przyjÄ™ty w 1582
+roku, biblioteka ta potrafi wykonywaÄ‡ obliczenia od 1 roku naszej ery.
 
-Powsta³a ona w wyniku inspiracji modu³em Perla Date::Calc i na nim siê
+PowstaÅ‚a ona w wyniku inspiracji moduÅ‚em Perla Date::Calc i na nim siÄ™
 opiera.
 
 %package devel
 Summary:	Gregoriandate for Ocaml - development part
-Summary(pl):	Data w kalendarzu gregoriañskim dla Ocamla - czê¶æ programistyczna
+Summary(pl.UTF-8):   Data w kalendarzu gregoriaÅ„skim dla Ocamla - czÄ™Å›Ä‡ programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
@@ -54,15 +54,15 @@ library extends it back through to 1 AD.
 It is inspired and derived from Perl's Date::Calc This package
 contains files needed to develop OCaml programs using this library.
 
-%description devel -l pl
-Gregorian Date jest napisan± w ocamlu bibliotek± dla ocamla wykonuj±c±
-podstawowe obliczenia w kalendarzu gregoriañskim.
+%description devel -l pl.UTF-8
+Gregorian Date jest napisanÄ… w ocamlu bibliotekÄ… dla ocamla wykonujÄ…cÄ…
+podstawowe obliczenia w kalendarzu gregoriaÅ„skim.
 
-Jest to biblioteka czêsto u¿ywanych obliczeñ przy u¿yciu kalendarza
-gregoriañskiego, u¿ywanego na pó³kuli zachodniej, a i coraz czê¶ciej
-na wschodniej. Mimo ¿e kalendarz gregoriañski zosta³ przyjêty w 1582
-roku, biblioteka ta potrafi wykonywaæ obliczenia od 1 roku naszej ery.
-Pakiet zawiera pliki niezbêdne do tworzenia programów u¿ywaj±cych tej
+Jest to biblioteka czÄ™sto uÅ¼ywanych obliczeÅ„ przy uÅ¼yciu kalendarza
+gregoriaÅ„skiego, uÅ¼ywanego na pÃ³Å‚kuli zachodniej, a i coraz czÄ™Å›ciej
+na wschodniej. Mimo Å¼e kalendarz gregoriaÅ„ski zostaÅ‚ przyjÄ™ty w 1582
+roku, biblioteka ta potrafi wykonywaÄ‡ obliczenia od 1 roku naszej ery.
+Pakiet zawiera pliki niezbÄ™dne do tworzenia programÃ³w uÅ¼ywajÄ…cych tej
 biblioteki.
 
 %prep
