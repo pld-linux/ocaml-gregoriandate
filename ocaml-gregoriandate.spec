@@ -1,7 +1,7 @@
 %define		_vendor_name	gregoriandate
 %define		ocaml_ver	1:3.09.2
 Summary:	Gregoriandate for Ocaml
-Summary(pl.UTF-8):   Data w kalendarzu gregoriańskim dla Ocamla
+Summary(pl.UTF-8):	Data w kalendarzu gregoriańskim dla Ocamla
 Name:		ocaml-%{_vendor_name}
 Version:	1.0.1
 Release:	5
@@ -38,7 +38,7 @@ opiera.
 
 %package devel
 Summary:	Gregoriandate for Ocaml - development part
-Summary(pl.UTF-8):   Data w kalendarzu gregoriańskim dla Ocamla - część programistyczna
+Summary(pl.UTF-8):	Data w kalendarzu gregoriańskim dla Ocamla - część programistyczna
 Group:		Development/Libraries
 %requires_eq	ocaml
 
